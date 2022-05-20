@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<resources>
+
+    <!--Common-->
+
+    <!--TODO: need check code style for naming-->
+    <!--<dimen name="main_nav_item_menu_spacing">16dp</dimen>-->
+    <dimen name="main_nav_item_menu_spacing_half">8dp</dimen>
+
+    <!--Task Add Fragment-->
+    <dimen name="task_add_side_spacing_half">8dp</dimen>
+
+    <!--Client Add Fragment-->
+    <!--<dimen name="client_add_side_spacing">16dp</dimen>-->
+    <dimen name="client_add_side_spacing_half">8dp</dimen>
+
+    <!--Car Add Fragment-->
+    <dimen name="car_add_side_spacing_half">8dp</dimen>
+
+    <!--Profile Tasks Fragment-->
+    <!--<dimen name="profile_tasks_side_spacing_quarter">4dp</dimen>-->
+    <dimen name="profile_tasks_side_spacing_half">8dp</dimen>
+
+    <!--Clients Fragment-->
+    <dimen name="clients_side_spacing_half">8dp</dimen>
+
+</resources>

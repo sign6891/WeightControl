@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weight Control</string>
+    <string name="kg">кг.</string>
+    <string name="defis">-</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="task_add_select_date_start_repair_hint">Выберите дату</string>
+    <string name="add_weight">Укажите вес</string>
+</resources>

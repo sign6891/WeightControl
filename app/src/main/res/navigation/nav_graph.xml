@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/weightControlFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="ru.sign6891.weightcontrol.ui.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/weightControlFragment"
+        android:name="ru.sign6891.weightcontrol.ui.WeightControlFragment"
+        android:label="WeightControlFragment" >
+        <action
+            android:id="@+id/action_weightControlFragment_to_weightControlAddFragment"
+            app:destination="@id/weightControlAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightControlAddFragment"
+        android:name="ru.sign6891.weightcontrol.ui.WeightControlAddFragment"
+        android:label="fragment_weight_control_add"
+        tools:layout="@layout/fragment_weight_control_add" />
+
+</navigation>
