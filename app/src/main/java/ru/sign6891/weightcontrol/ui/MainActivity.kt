@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
 
         navController = navHostFragment.navController
 
-
+        //Comment
         floatingActionButton.setOnClickListener {
             onClickFloatingActionButton()
         }
