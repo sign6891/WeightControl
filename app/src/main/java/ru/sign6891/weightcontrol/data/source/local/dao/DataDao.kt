@@ -1,5 +1,6 @@
 package ru.sign6891.weightcontrol.data.source.local.dao
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow
 import ru.sign6891.weightcontrol.data.source.local.entity.DataElementEntity
@@ -9,10 +10,10 @@ import ru.sign6891.weightcontrol.data.source.local.entity.DataElementEntity
 interface DataDao {
 
     @Query("SELECT*FROM dataelemententity")
-     fun getAllElement(): Flow<List<DataElementEntity>>
+     fun getAllElement(): LiveData<List<DataElementEntity>>
 
     @Query("SELECT * FROM dataelemententity WHERE :id like elementId")
-    fun getElement(id: Int) : DataElementEntity
+    fun getElement(id: Int) : LiveData<DataElementEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertElement(dataElement: DataElementEntity)

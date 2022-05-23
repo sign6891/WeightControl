@@ -63,6 +63,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="9dp"
+                android:textSize="16sp"
                 android:hint="@string/task_add_select_date_start_repair_hint"
                 app:layout_constraintBottom_toTopOf="@+id/view"
                 app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -95,6 +96,8 @@
             android:id="@+id/editTextWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp"
             android:hint="@string/add_weight"/>
 
     </LinearLayout>

@@ -5,9 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ru.sign6891.weightcontrol.R
+import ru.sign6891.weightcontrol.data.WeightControlApplication
 import ru.sign6891.weightcontrol.ui.adapter.ElementListAdapter
 import ru.sign6891.weightcontrol.ui.base.BaseFragment
 
@@ -19,9 +22,9 @@ class WeightControlFragment : BaseFragment() {
     }
 
 
-    /** private val mViewModel: WeightControlViewModel by viewModels {
+    private val mViewModel: WeightControlViewModel by viewModels {
     WeightControlViewModelFactory((activity as WeightControlApplication).repository)
-    }*/
+    }
 
 
     override fun onCreateView(
